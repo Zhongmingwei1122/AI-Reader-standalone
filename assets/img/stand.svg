@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="折叠阅读支架">
+  <rect width="800" height="600" fill="#f4f1ea"/>
+  <path d="M250 470h300" stroke="#111" stroke-width="4"/>
+  <path d="M300 470l190-310" stroke="#111" stroke-width="4"/>
+  <path d="M370 470l190-310" stroke="#111" stroke-width="4"/>
+  <path d="M310 420l160-262" stroke="#111" stroke-width="3"/>
+  <rect x="360" y="160" width="220" height="310" rx="12" transform="rotate(-16 470 315)" fill="none" stroke="#111" stroke-width="4"/>
+  <rect x="380" y="188" width="180" height="252" rx="4" transform="rotate(-16 470 315)" fill="none" stroke="#111" stroke-width="2"/>
+  <path d="M330 500h180" stroke="#111" stroke-width="2" stroke-dasharray="4 10"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="AI Pocket Reader 阅读套装">
+  <rect width="800" height="600" fill="#f4f1ea"/>
+  <path d="M110 470h580" stroke="#111" stroke-width="3"/>
+  <rect x="430" y="120" width="230" height="330" rx="18" fill="none" stroke="#111" stroke-width="4" transform="rotate(12 545 285)"/>
+  <rect x="448" y="140" width="194" height="286" rx="6" fill="none" stroke="#111" stroke-width="2" transform="rotate(12 545 285)"/>
+  <rect x="190" y="150" width="230" height="320" rx="16" fill="none" stroke="#111" stroke-width="4"/>
+  <rect x="206" y="168" width="198" height="270" rx="4" fill="none" stroke="#111" stroke-width="2"/>
+  <path d="M190 390h230" stroke="#111" stroke-width="1.5" stroke-dasharray="4 8"/>
+  <path d="M340 470l95-160" stroke="#111" stroke-width="4"/>
+  <path d="M390 470l95-160" stroke="#111" stroke-width="4"/>
+  <path d="M340 470h115" stroke="#111" stroke-width="4"/>
+  <path d="M260 530h280" stroke="#111" stroke-width="2" stroke-dasharray="4 10"/>
+</svg>

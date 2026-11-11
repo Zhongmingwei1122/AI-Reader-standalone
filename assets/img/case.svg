@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="织物保护套">
+  <rect width="800" height="600" fill="#f4f1ea"/>
+  <rect x="230" y="100" width="340" height="420" rx="26" fill="none" stroke="#111" stroke-width="4"/>
+  <rect x="252" y="122" width="296" height="376" rx="12" fill="none" stroke="#111" stroke-width="3"/>
+  <path d="M300 100v420" stroke="#111" stroke-width="3"/>
+  <circle cx="276" cy="300" r="5" fill="#111"/>
+  <path d="M540 330h18v80h-18" fill="none" stroke="#111" stroke-width="3"/>
+  <path d="M200 520h400" stroke="#111" stroke-width="2" stroke-dasharray="4 10"/>
+</svg>

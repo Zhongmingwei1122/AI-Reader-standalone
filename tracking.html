@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>订单与物流 · AI Pocket Reader</title>
+  <meta name="description" content="查询 AI Pocket Reader 演示订单的配送状态。">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="tracking">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <div class="announcement" id="announcement">
+    <div class="container announcement-inner">
+      <span>交互原型 · 参数、价格与评价均为演示数据，不产生真实交易</span>
+      <button class="announcement-close" type="button" data-announcement-close aria-label="关闭提示">×</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AI Pocket Reader 首页">
+        <img src="assets/favicon.svg" alt="">
+        <span class="brand-name">AI POCKET READER</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="主导航">
+        <a class="nav-link" href="products.html">产品</a>
+        <a class="nav-link" href="ai.html">AI 功能</a>
+        <a class="nav-link" href="explore.html">Explore</a>
+        <a class="nav-link is-active" href="store.html" aria-current="page">商店</a>
+        <a class="nav-link" href="support.html">支持</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-link" href="account.html">账户</a>
+        <button class="cart-button" type="button" data-cart-open aria-label="打开购物车">
+          <span>购物车</span><span class="cart-count" data-cart-count>0</span>
+        </button>
+        <a class="button small" href="products.html">购买 <span class="arrow">→</span></a>
+        <button class="menu-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav" aria-label="打开菜单">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">STORE / ORDER TRACKING</p>
+        <h1>订单与物流。</h1>
+        <p class="lead">用订单号和下单邮箱查询配送状态。演示页面会展示一段模拟物流进度。</p>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="container">
+        <div class="tracking-layout">
+          <form class="tracking-form" id="tracking-form">
+            <div class="form-section-head"><h2>查询订单</h2><span>DEMO</span></div>
+            <div class="field"><label for="tracking-order">订单号</label><input id="tracking-order" type="text" value="APR-2026-102938" required></div>
+            <div class="field"><label for="tracking-email">下单邮箱</label><input id="tracking-email" type="email" value="demo@aipocketreader.com" required></div>
+            <button class="button" type="submit">查询物流 <span class="arrow">→</span></button>
+            <p class="form-note">演示查询不连接真实承运商。正式站点会展示承运商、运单号与预计到达时间。</p>
+          </form>
+
+          <div class="tracking-result" id="tracking-result">
+            <div class="tracking-result-head">
+              <div>
+                <div class="eyebrow">ORDER</div>
+                <h2 id="tracking-number">APR-2026-102938</h2>
+              </div>
+              <span class="demo-badge">演示物流</span>
+            </div>
+            <div class="tracking-summary">
+              <div><span>承运商</span><strong>顺丰速运（演示）</strong></div>
+              <div><span>运单号</span><strong>SF 0000 0000 0000</strong></div>
+              <div><span>预计到达</span><strong>11 月 14 日</strong></div>
+            </div>
+            <ol class="timeline">
+              <li class="done"><span class="dot"></span><div><strong>已下单</strong><p>11-11 09:41</p></div></li>
+              <li class="done"><span class="dot"></span><div><strong>已支付</strong><p>11-11 09:42</p></div></li>
+              <li class="done"><span class="dot"></span><div><strong>备货中</strong><p>11-11 14:20</p></div></li>
+              <li class="current"><span class="dot"></span><div><strong>已发货</strong><p>11-12 09:18 · 已交给承运商</p></div></li>
+              <li><span class="dot"></span><div><strong>运输中</strong><p>等待更新</p></div></li>
+              <li><span class="dot"></span><div><strong>已签收</strong><p>等待更新</p></div></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/favicon.svg" alt="">
+            <span class="brand-name">AI POCKET READER</span>
+          </a>
+          <p>一块安静的墨水屏，一个真正参与阅读的 AI 助手。让读过的内容留下来。</p>
+        </div>
+        <div class="footer-col">
+          <h3>产品</h3>
+          <a href="products.html">产品详情</a>
+          <a href="ai.html">AI 功能</a>
+          <a href="store.html">商店与配件</a>
+          <a href="support.html#firmware">固件升级</a>
+        </div>
+        <div class="footer-col">
+          <h3>探索</h3>
+          <a href="explore.html">Explore</a>
+          <a href="explore.html#reading-lists">阅读清单</a>
+          <a href="explore.html#case-study">使用案例</a>
+          <a href="article.html">设计手记</a>
+        </div>
+        <div class="footer-col">
+          <h3>支持</h3>
+          <a href="support.html#faq">FAQ</a>
+          <a href="support.html#guides">使用教程</a>
+          <a href="tracking.html">订单与物流</a>
+          <a href="support.html#contact">联系我们</a>
+        </div>
+        <div class="footer-col">
+          <h3>关于</h3>
+          <a href="legal.html#privacy">隐私政策</a>
+          <a href="legal.html#terms">服务条款</a>
+          <a href="legal.html#returns">退换货政策</a>
+          <a href="legal.html#accessibility">无障碍</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> AI Pocket Reader · 交互原型，非最终商业页面</span>
+        <nav aria-label="法律信息">
+          <a href="legal.html#privacy">隐私</a>
+          <a href="legal.html#terms">条款</a>
+          <a href="legal.html#shipping">配送</a>
+          <span>微信支付 / 支付宝 / Stripe（规划）</span>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

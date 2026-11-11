@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 功能 · AI Pocket Reader</title>
+  <meta name="description" content="AI 摘要、问答、翻译、语音与知识库：看看 AI Pocket Reader 如何把 AI 放进阅读，而不是把阅读变成聊天。">
+  <meta property="og:title" content="AI 功能 · AI Pocket Reader">
+  <meta property="og:description" content="AI 阅读，不把正文挤到一边。">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="ai">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <div class="announcement" id="announcement">
+    <div class="container announcement-inner">
+      <span>交互原型 · 参数、价格与评价均为演示数据，不产生真实交易</span>
+      <button class="announcement-close" type="button" data-announcement-close aria-label="关闭提示">×</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AI Pocket Reader 首页">
+        <img src="assets/favicon.svg" alt="">
+        <span class="brand-name">AI POCKET READER</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="主导航">
+        <a class="nav-link" href="products.html">产品</a>
+        <a class="nav-link is-active" href="ai.html" aria-current="page">AI 功能</a>
+        <a class="nav-link" href="explore.html">Explore</a>
+        <a class="nav-link" href="store.html">商店</a>
+        <a class="nav-link" href="support.html">支持</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-link" href="account.html">账户</a>
+        <button class="cart-button" type="button" data-cart-open aria-label="打开购物车">
+          <span>购物车</span><span class="cart-count" data-cart-count>0</span>
+        </button>
+        <a class="button small" href="products.html">购买 <span class="arrow">→</span></a>
+        <button class="menu-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav" aria-label="打开菜单">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="ai-page-hero">
+      <div class="container">
+        <p class="eyebrow">AI READING ASSISTANT / DEMO</p>
+        <h1>AI 阅读，<br>不把正文挤到一边。</h1>
+        <p>摘要、问答、翻译、语音与知识库，都以卡片和整页呈现。选中一段文字，AI 才出现；读完，屏幕又回到安静。</p>
+      </div>
+    </section>
+
+    <div class="ai-tabs">
+      <div class="container ai-tabs-inner" role="tablist" aria-label="AI 功能演示">
+        <button class="ai-tab is-active" type="button" role="tab" data-ai-tab="summary" aria-selected="true" aria-controls="summary">01 摘要</button>
+        <button class="ai-tab" type="button" role="tab" data-ai-tab="ask" aria-selected="false" aria-controls="ask">02 问答</button>
+        <button class="ai-tab" type="button" role="tab" data-ai-tab="translate" aria-selected="false" aria-controls="translate">03 翻译</button>
+        <button class="ai-tab" type="button" role="tab" data-ai-tab="voice" aria-selected="false" aria-controls="voice">04 语音</button>
+        <button class="ai-tab" type="button" role="tab" data-ai-tab="knowledge" aria-selected="false" aria-controls="knowledge">05 知识库</button>
+      </div>
+    </div>
+
+    <section class="ai-panel is-active" data-ai-panel="summary" id="summary" role="tabpanel">
+      <div class="container ai-panel-grid">
+        <div class="ai-panel-copy">
+          <p class="eyebrow">SUMMARY / 3 分钟</p>
+          <h2>先知道值不值得读，<br>再决定读多深。</h2>
+          <p>一句话总结、3–5 个核心观点与可执行建议。每一条观点都尽量回到原文，而不是让你相信一段无法核实的文字。</p>
+          <ul class="ai-points">
+            <li>适合长文、PDF、书籍与网页文章。</li>
+            <li>摘要与目录并列，先看结构再读原文。</li>
+            <li>AI 生成，保留原文页码供核对。</li>
+          </ul>
+          <div style="margin-top:26px"><a class="text-link" href="products.html">查看产品 <span>→</span></a></div>
+        </div>
+
+        <div class="demo-shell">
+          <div class="demo-head">
+            <span>《注意力的形状》· 第三章</span>
+            <span class="demo-badge">示例内容</span>
+          </div>
+          <div class="demo-screen">
+            <div class="result-label">3 分钟读懂全文 · 约 860 字</div>
+            <div class="result-title">注意力是有限的土地，保护它，比填满它更重要。</div>
+            <ul class="result-points">
+              <li><span class="n">01</span><span>注意力不是无限资源，每次切换都会留下未完成的思绪。</span></li>
+              <li><span class="n">02</span><span>阅读是一种缓慢的注意力训练，理解在节奏里成形。</span></li>
+              <li><span class="n">03</span><span>不必拒绝工具，只需为重要的事留出一段不被打断的时间。</span></li>
+            </ul>
+            <p class="result-source">第 3 章 · 第 128–132 页</p>
+            <p class="ai-disclaimer">示例内容 · AI 生成，请核对原文。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-panel" data-ai-panel="ask" id="ask" role="tabpanel">
+      <div class="container ai-panel-grid">
+        <div class="ai-panel-copy">
+          <p class="eyebrow">ASK / 问这一章</p>
+          <h2>不是替你读完，<br>而是帮你读懂。</h2>
+          <p>围绕当前章节提问，回答给出结论、解释与原文依据。你可以点回页码，也可以继续追问，但不会进入手机式聊天流。</p>
+          <ul class="ai-points">
+            <li>回答以结论、解释、依据三段呈现。</li>
+            <li>没有可靠依据时明确说“不编造”。</li>
+            <li>从阅读页发起，返回后仍停在同一页。</li>
+          </ul>
+        </div>
+
+        <div class="demo-shell">
+          <div class="demo-head">
+            <span>《注意力的形状》· 第三章</span>
+            <span class="demo-badge">示例内容</span>
+          </div>
+          <div class="demo-screen">
+            <div class="question-chips">
+              <button class="question-chip is-active" type="button" data-question="作者为什么说频繁切换任务反而更慢？" data-answer="因为切换不是并行处理，而是反复重新加载上下文；每一次打断都会留下注意力残留，让下一次专注更难。" data-source="第 3 章 · 第 128 / 131 页">频繁切换为什么更慢？</button>
+              <button class="question-chip" type="button" data-question="用一个例子解释注意力残留。" data-answer="比如读论文时回复一条消息，回来后你还记得公式的前半段，却需要花时间重新找回推理的线索。那段未完成的思绪，就是注意力残留。" data-source="第 3 章 · 第 129 页">解释注意力残留</button>
+              <button class="question-chip" type="button" data-question="这一章的核心观点是什么？" data-answer="注意力是有限资源；阅读是训练；保护注意力比填满时间更重要。" data-source="第 3 章 · 全文">这一章的核心观点</button>
+            </div>
+            <p class="answer-question" id="demo-question">作者为什么说频繁切换任务反而更慢？</p>
+            <p class="answer-conclusion" id="demo-answer">因为切换不是并行处理，而是反复重新加载上下文；每一次打断都会留下注意力残留，让下一次专注更难。</p>
+            <div class="result-source" id="demo-source">第 3 章 · 第 128 / 131 页</div>
+            <p class="ai-disclaimer">示例内容 · AI 生成，请核对原文。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-panel" data-ai-panel="translate" id="translate" role="tabpanel">
+      <div class="container ai-panel-grid">
+        <div class="ai-panel-copy">
+          <p class="eyebrow">TRANSLATE / 整页对照</p>
+          <h2>理解不离开上下文。</h2>
+          <p>原文与译文并排呈现，段落一一对应。翻译不会覆盖正文，也不会把页面变成两个互不相干的窗口。</p>
+          <ul class="ai-points">
+            <li>整页对照，保留原文段落。</li>
+            <li>适合英文长文、论文与资料阅读。</li>
+            <li>翻译结果同样标注 AI 生成提示。</li>
+          </ul>
+        </div>
+
+        <div class="demo-shell">
+          <div class="demo-head">
+            <span>中文 → English · 选中段落</span>
+            <span class="demo-badge">示例内容</span>
+          </div>
+          <div class="demo-screen">
+            <div class="translate-pair">
+              <p class="origin">在屏幕之间来回切换时，人并不会真正节省时间。</p>
+              <p class="translation">Switching between screens does not actually save time.</p>
+            </div>
+            <div class="translate-pair">
+              <p class="origin">每一次打断都留下未完成的思绪，它们堆积起来，让下一次专注更难。</p>
+              <p class="translation">Every interruption leaves unfinished thought; these traces accumulate and make the next moment of focus harder.</p>
+            </div>
+            <div class="translate-pair">
+              <p class="origin">我们以为自己在同时处理很多事，其实只是不断回到起点。</p>
+              <p class="translation">We believe we are handling many things at once, but in reality we keep returning to the starting point.</p>
+            </div>
+            <p class="ai-disclaimer">示例内容 · AI 生成，请核对原文。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-panel" data-ai-panel="voice" id="voice" role="tabpanel">
+      <div class="container ai-panel-grid">
+        <div class="ai-panel-copy">
+          <p class="eyebrow">VOICE / 说出来</p>
+          <h2>说完就忘的事，<br>交给它整理。</h2>
+          <p>录音停止后自动转写，再整理成摘要、要点与待办。语音笔记和阅读摘录进入同一个知识库，之后可以搜索。</p>
+          <ul class="ai-points">
+            <li>录音、转写、整理在同一条流程里。</li>
+            <li>安静环境效果更好，支持暂停与继续。</li>
+            <li>离线录音，联网后继续处理。</li>
+          </ul>
+        </div>
+
+        <div class="demo-shell">
+          <div class="demo-head">
+            <span>语音笔记 · 今天 09:41</span>
+            <span class="demo-badge">示例内容</span>
+          </div>
+          <div class="demo-screen">
+            <div class="result-label">摘要</div>
+            <div class="result-title" style="font-size:24px">把每天早晨的第一段时间留给阅读，不打开消息。</div>
+            <div class="voice-line">
+              <span class="voice-play" aria-hidden="true">▶</span>
+              <span class="waveform" aria-hidden="true">
+                <i style="height:8px"></i><i style="height:18px"></i><i style="height:12px"></i><i style="height:22px"></i><i style="height:10px"></i><i style="height:16px"></i><i style="height:24px"></i><i style="height:9px"></i><i style="height:15px"></i><i style="height:21px"></i><i style="height:11px"></i><i style="height:17px"></i><i style="height:7px"></i><i style="height:19px"></i><i style="height:13px"></i><i style="height:23px"></i><i style="height:10px"></i><i style="height:16px"></i><i style="height:8px"></i>
+              </span>
+              <span class="voice-duration">02:13</span>
+            </div>
+            <ul class="result-points">
+              <li><span class="n">01</span><span>早晨的注意力最完整，适合需要理解的内容。</span></li>
+              <li><span class="n">02</span><span>阅读前关闭消息通知，把手机放到看不见的地方。</span></li>
+              <li><span class="n">03</span><span>用二十分钟作为起点，而不是要求自己读一小时。</span></li>
+            </ul>
+            <p class="voice-transcript">“早上起来之后先不要打开消息，给自己留二十分钟。读什么都可以，重要的是不被打断。”</p>
+            <p class="ai-disclaimer">示例内容 · AI 生成，请核对原文。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ai-panel" data-ai-panel="knowledge" id="knowledge" role="tabpanel">
+      <div class="container ai-panel-grid">
+        <div class="ai-panel-copy">
+          <p class="eyebrow">KNOWLEDGE / 找回来</p>
+          <h2>读过的、问过的、说过的，<br>最后都回到一个地方。</h2>
+          <p>摘录、摘要、问答和语音笔记共用一套搜索。你不需要记得它来自哪本书、哪一天，只需要记得一个词。</p>
+          <ul class="ai-points">
+            <li>按类型筛选：摘录、摘要、问答、语音。</li>
+            <li>每条内容保留来源与日期。</li>
+            <li>演示只在示例数据内搜索，不读取你的设备。</li>
+          </ul>
+        </div>
+
+        <div class="demo-shell">
+          <div class="demo-head">
+            <span>我的知识库 · 示例</span>
+            <span class="demo-badge">示例内容</span>
+          </div>
+          <div class="demo-screen">
+            <form class="knowledge-search" id="knowledge-demo-form">
+              <label class="visually-hidden" for="knowledge-demo-input">搜索示例知识库</label>
+              <input id="knowledge-demo-input" type="search" placeholder="搜索“注意力”…" value="注意力">
+              <button type="submit">搜索</button>
+            </form>
+            <div class="result-label" id="knowledge-demo-count">3 条结果</div>
+            <div class="knowledge-result">
+              <span class="type">摘录 · 书籍</span>
+              <h4>每一次打断都留下未完成的思绪</h4>
+              <p>它们的堆积让下一次专注更难。来自《注意力的形状》第 3 章。</p>
+            </div>
+            <div class="knowledge-result">
+              <span class="type">摘要 · 全书</span>
+              <h4>注意力是有限的土地</h4>
+              <p>保护它，比填满它更重要。3 分钟读懂全文。</p>
+            </div>
+            <div class="knowledge-result">
+              <span class="type">语音笔记</span>
+              <h4>早晨留给阅读，不打开消息</h4>
+              <p>二十分钟作为起点，而不是要求自己读一小时。</p>
+            </div>
+            <p class="ai-disclaimer">示例内容 · 不读取用户设备数据。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="container">
+        <div class="review-panel">
+          <p class="quote">“AI 应该让阅读继续，<br>而不是把读者拉进另一个对话框。”</p>
+          <div class="note">
+            <strong>设计原则</strong>
+            解释、翻译和总结都进入独立整页；阅读页的 AI 操作只占用底栏预留空间，从不覆盖正文。
+            <div style="margin-top:16px"><a class="text-link" href="products.html">了解设备 <span>→</span></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/favicon.svg" alt="">
+            <span class="brand-name">AI POCKET READER</span>
+          </a>
+          <p>一块安静的墨水屏，一个真正参与阅读的 AI 助手。让读过的内容留下来。</p>
+        </div>
+        <div class="footer-col">
+          <h3>产品</h3>
+          <a href="products.html">产品详情</a>
+          <a href="ai.html">AI 功能</a>
+          <a href="store.html">商店与配件</a>
+          <a href="support.html#firmware">固件升级</a>
+        </div>
+        <div class="footer-col">
+          <h3>探索</h3>
+          <a href="explore.html">Explore</a>
+          <a href="explore.html#reading-lists">阅读清单</a>
+          <a href="explore.html#case-study">使用案例</a>
+          <a href="article.html">设计手记</a>
+        </div>
+        <div class="footer-col">
+          <h3>支持</h3>
+          <a href="support.html#faq">FAQ</a>
+          <a href="support.html#guides">使用教程</a>
+          <a href="support.html#warranty">售后服务</a>
+          <a href="support.html#contact">联系我们</a>
+        </div>
+        <div class="footer-col">
+          <h3>关于</h3>
+          <a href="legal.html#privacy">隐私政策</a>
+          <a href="legal.html#terms">服务条款</a>
+          <a href="legal.html#returns">退换货政策</a>
+          <a href="legal.html#accessibility">无障碍</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> AI Pocket Reader · 交互原型，非最终商业页面</span>
+        <nav aria-label="法律信息">
+          <a href="legal.html#privacy">隐私</a>
+          <a href="legal.html#terms">条款</a>
+          <a href="legal.html#shipping">配送</a>
+          <span>微信支付 / 支付宝 / Stripe（规划）</span>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

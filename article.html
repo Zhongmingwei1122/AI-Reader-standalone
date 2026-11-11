@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>为什么我们仍然需要一块只用来阅读的屏幕 · AI Pocket Reader</title>
+  <meta name="description" content="关于注意力、阅读节奏，以及 AI 应该待在哪里的设计手记。">
+  <meta property="og:title" content="为什么我们仍然需要一块只用来阅读的屏幕？">
+  <meta property="og:description" content="关于注意力、阅读节奏，以及 AI 应该待在哪里的设计手记。">
+  <meta property="og:type" content="article">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="explore">
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <div class="announcement" id="announcement">
+    <div class="container announcement-inner">
+      <span>交互原型 · 参数、价格与评价均为演示数据，不产生真实交易</span>
+      <button class="announcement-close" type="button" data-announcement-close aria-label="关闭提示">×</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AI Pocket Reader 首页">
+        <img src="assets/favicon.svg" alt="">
+        <span class="brand-name">AI POCKET READER</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="主导航">
+        <a class="nav-link" href="products.html">产品</a>
+        <a class="nav-link" href="ai.html">AI 功能</a>
+        <a class="nav-link is-active" href="explore.html" aria-current="page">Explore</a>
+        <a class="nav-link" href="store.html">商店</a>
+        <a class="nav-link" href="support.html">支持</a>
+      </nav>
+      <div class="header-actions">
+        <a class="header-link" href="account.html">账户</a>
+        <button class="cart-button" type="button" data-cart-open aria-label="打开购物车">
+          <span>购物车</span><span class="cart-count" data-cart-count>0</span>
+        </button>
+        <a class="button small" href="products.html">购买 <span class="arrow">→</span></a>
+        <button class="menu-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav" aria-label="打开菜单">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="article-page">
+      <div class="container">
+        <header class="article-header">
+          <div class="meta">
+            <span>DESIGN NOTES</span><span>2026.11</span><span>8 MIN READ</span>
+          </div>
+          <h1>为什么我们仍然需要<br>一块只用来阅读的屏幕？</h1>
+          <p class="dek">在手机上，阅读总是被下一条消息打断。我们试着把阅读重新放回一块不推送、不闪烁、不主动打扰的屏幕上。</p>
+        </header>
+
+        <div class="article-body">
+          <p>我们并没有停止阅读。恰恰相反，每天划过的文字比过去任何时候都多。但在屏幕之间来回切换时，人并不会真正节省时间。每一次打断都留下一点未完成的思绪，它们堆积起来，让下一次专注变得更难。</p>
+
+          <h2>被打断的不是时间，是理解</h2>
+          <p>阅读一段复杂的论证，需要让前一句话停留在脑子里，等下一句话来解释它。这个过程很慢，也很难察觉。它不像加载一条视频那样有明确的开始和结束，所以最容易被误以为“等会儿再看也一样”。</p>
+          <p>但理解有它的节奏。文字要求读者一行一行往前走；翻页、停顿、回看，都是思考的一部分。当阅读被切成十秒钟的片段，我们仍然能获得信息，却很难形成完整的判断。</p>
+
+          <blockquote>“注意力更像一块有限的地，种下什么，就会长出什么。”</blockquote>
+
+          <p>这也是为什么一块“只能阅读”的屏幕仍然有意义。它不试图比手机做更多的事。它只是把阅读从消息、通知和无限滚动里拿出来，放回一个相对完整的时间里。</p>
+
+          <h2>AI 应该待在哪里？</h2>
+          <p>AI 可以帮我们理解长文、翻译段落、整理笔记。但如果它出现在正文上方，变成一个不断弹出答案的对话窗口，阅读就会再次被打断。我们更愿意让 AI 待在阅读的边缘：选中一段文字，它才出现；需要结果时，进入独立整页；读完后，回到原来的页码。</p>
+
+          <figure class="article-figure">
+            <div>
+              <div class="device-frame flat">
+                <div class="device-screen">
+                  <img src="assets/img/summary.png" alt="AI Pocket Reader 摘要页：一句话总结、核心观点与建议" loading="lazy">
+                </div>
+                <div class="device-chin">SUMMARY / 3 MIN READ</div>
+              </div>
+              <figcaption>AI 摘要以整页卡片呈现，不覆盖正文。</figcaption>
+            </div>
+          </figure>
+
+          <p>这也是我们在设备端做的一个小决定：AI 操作只占用底栏预留的高度。它出现时，正文会重新排版，而不是被一层浮动的界面盖住。这个决定让阅读界面少了一点“智能感”，但多了一点可以持续读下去的安静。</p>
+
+          <h2>慢一点，才能留下来</h2>
+          <p>我们不认为所有人都需要一台专用的阅读设备。手机、平板和纸书都很好。但如果你发现自己越来越难读完一篇长文，或读完却记不住任何东西，也许问题不在内容，而在阅读发生的环境。</p>
+          <p>一块更安静的屏幕，不能替你把书读完。它只是把那些被切碎的时间，重新拼成一段完整的注意力。</p>
+        </div>
+
+        <div class="article-cta">
+          <h2>把下一本书，<br>放进口袋。</h2>
+          <a class="button" href="products.html">了解 AI Pocket Reader <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/favicon.svg" alt="">
+            <span class="brand-name">AI POCKET READER</span>
+          </a>
+          <p>一块安静的墨水屏，一个真正参与阅读的 AI 助手。让读过的内容留下来。</p>
+        </div>
+        <div class="footer-col">
+          <h3>产品</h3>
+          <a href="products.html">产品详情</a>
+          <a href="ai.html">AI 功能</a>
+          <a href="store.html">商店与配件</a>
+          <a href="support.html#firmware">固件升级</a>
+        </div>
+        <div class="footer-col">
+          <h3>探索</h3>
+          <a href="explore.html">Explore</a>
+          <a href="explore.html#reading-lists">阅读清单</a>
+          <a href="explore.html#case-study">使用案例</a>
+          <a href="article.html">设计手记</a>
+        </div>
+        <div class="footer-col">
+          <h3>支持</h3>
+          <a href="support.html#faq">FAQ</a>
+          <a href="support.html#guides">使用教程</a>
+          <a href="support.html#warranty">售后服务</a>
+          <a href="support.html#contact">联系我们</a>
+        </div>
+        <div class="footer-col">
+          <h3>关于</h3>
+          <a href="legal.html#privacy">隐私政策</a>
+          <a href="legal.html#terms">服务条款</a>
+          <a href="legal.html#returns">退换货政策</a>
+          <a href="legal.html#accessibility">无障碍</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> AI Pocket Reader · 交互原型，非最终商业页面</span>
+        <nav aria-label="法律信息">
+          <a href="legal.html#privacy">隐私</a>
+          <a href="legal.html#terms">条款</a>
+          <a href="legal.html#shipping">配送</a>
+          <span>微信支付 / 支付宝 / Stripe（规划）</span>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

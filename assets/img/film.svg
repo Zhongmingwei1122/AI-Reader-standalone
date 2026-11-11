@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="哑光屏幕保护膜">
+  <rect width="800" height="600" fill="#f4f1ea"/>
+  <rect x="230" y="100" width="340" height="420" rx="10" fill="none" stroke="#111" stroke-width="4"/>
+  <rect x="250" y="120" width="300" height="380" rx="4" fill="none" stroke="#111" stroke-width="2"/>
+  <path d="M550 100l-70 70" stroke="#111" stroke-width="4"/>
+  <path d="M550 100v70h-70" fill="none" stroke="#111" stroke-width="4"/>
+  <path d="M400 200v220M290 310h220" stroke="#111" stroke-width="2" stroke-dasharray="3 9"/>
+  <path d="M230 560h340" stroke="#111" stroke-width="2" stroke-dasharray="4 10"/>
+</svg>
